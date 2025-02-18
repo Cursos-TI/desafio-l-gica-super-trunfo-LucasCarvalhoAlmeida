@@ -29,7 +29,8 @@ int main() {
     scanf("%[^\n]", &estadoa);
 
     printf("Digite o nome da cidade:");
-    scanf("%s", &nomecidadea);
+    getchar();
+    scanf("%[^\n]", &nomecidadea);
 
     printf("Digite a população da cidade:");
     scanf("%d", &populacaoa);
@@ -52,7 +53,8 @@ int main() {
     scanf("%[^\n]", &estadob);
 
     printf("Digite o nome da cidade:");
-    scanf("%s", &nomecidadeb);
+    getchar();
+    scanf("%[^\n]", &nomecidadeb);
 
     printf("Digite a população da cidade:");
     scanf("%d", &populacaob);
