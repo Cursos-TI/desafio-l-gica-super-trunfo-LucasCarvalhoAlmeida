@@ -86,36 +86,44 @@ int main() {
     if(populacaoa > populacaob) {
         printf("\nPopulação da cidade do jogador 1 é maior.\n");
         pontos_jogador1++;
-    } else{
+    } else if(populacaoa < populacaob) {
         printf("\nPopulação da cidade do jogador 2 é maior.\n");
         pontos_jogador2++;
+    } else {
+        printf("\n Empate no critério População\n");
     }
 
     // Comparação de área
     if(areaa > areab) {
         printf("\nÁrea da cidade do jogador 1 é maior.\n");
         pontos_jogador1++;
-    } else{
+    } else if(areaa < areab)   {
         printf("\nÁrea da cidade do jogador 2 é maior.\n");
         pontos_jogador2++;
+    } else{
+        printf("\n Empate no critério área\n");
     }
 
     // Comparação de pib
     if(piba > pibb) {
         printf("\nPib da cidade do jogador 1 é maior.\n");
         pontos_jogador1++;
-    } else{
+    } else if(piba < pibb)   {
         printf("\nPib da cidade do jogador 2 é maior.\n");
         pontos_jogador2++;
+    } else {
+        printf("\n Empate no critério PIB\n");
     }
 
     // Comparação de pontos turiscos
     if(pturisticosa > pturisticosb) {
         printf("\nPontos Turisticos da cidade do jogador 1 é maior.\n");
         pontos_jogador1++;
-    } else{
+    } else if (pturisticosa < pturisticosb)    {
         printf("\nPontos Turisticos da cidade do jogador 2 é maior.\n");
         pontos_jogador2++;
+    } else{
+        printf("\n Empate no critério pontos turísticos\n");
     }
 
 
@@ -125,12 +133,12 @@ int main() {
 
    // Exibição do vencedor
 
-   printf("O jogador com a carta vencedora é:");
+   printf("O jogador com a carta vencedora é:\n");
 
    if(pontos_jogador1 > pontos_jogador2){
-    printf("Jogador 1 é o vencedor com %d pontos!\n", pontos_jogador1);
+    printf("\nJogador 1 é o vencedor com %d pontos!\n", pontos_jogador1);
    } else if(pontos_jogador1 < pontos_jogador2){
-    printf("Jogador 2 é o vencedor com %d pontos!\n", pontos_jogador2);
+    printf("\nJogador 2 é o vencedor com %d pontos!\n", pontos_jogador2);
    } else{
     printf("\n O jogo terminou empatado!");
    }
