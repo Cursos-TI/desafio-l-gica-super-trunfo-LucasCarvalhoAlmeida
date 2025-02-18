@@ -4,55 +4,55 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
-    char estadoa, estadob;
-    char nomecidadea, nomecidadeb;
-    int populacaoa[100], populacaob[100];
+    char estadoa[100], estadob[100];
+    char nomecidadea[100], nomecidadeb[100];
+    int populacaoa, populacaob;
     float areaa, areab;
     float piba, pibb;
     int pturisticosa, pturisticosb;
 
 
     printf("Bem-vindo ao sistema de cadastro do Super Trunfo - Países!\n");
-    printf("\nJogador 1 insira os dados da sua carta\n");
+    printf("Jogador 1 insira os dados da sua carta\n");
 
-    printf("\nInsira o nome do estado\n");
+    printf("Insira o nome do estado:");
     scanf("%c", &estadoa);
 
-    printf("\nDigite o nome da cidade:\n");
+    printf("Digite o nome da cidade:");
     scanf("%c", &nomecidadea);
 
-    printf("\nDigite a população da cidade:\n");
+    printf("Digite a população da cidade:");
     scanf("%d", &populacaoa);
 
-    printf("\nDigite a área da cidade (em km²):\n");
+    printf("Digite a área da cidade (em km²):");
     scanf("%f", &areaa);
 
-    printf("\nDigite o PIB da cidade (em milhões):\n");
+    printf("Digite o PIB da cidade (em milhões):");
     scanf("%f", &piba);
 
-    printf("\nDigite o número de pontos turisticos:\n");
+    printf("Digite o número de pontos turisticos:");
     scanf("%d", &pturisticosa);
 
 
     printf("\nMuito bom\n");
-    printf("\nAgora é a sua vez jogador 2\n");
+    printf("Agora é a sua vez jogador 2:\n");
 
-    printf("\nInsira o nome do estado\n");
+    printf("Insira o nome do estado");
     scanf("%c", &estadob);
 
-    printf("\nDigite o nome da cidade:\n");
+    printf("Digite o nome da cidade:");
     scanf("%c", &nomecidadeb);
 
-    printf("\nDigite a população da cidade:\n");
+    printf("Digite a população da cidade:");
     scanf("%d", &populacaob);
 
-    printf("\nDigite a área da cidade (em km²):\n");
+    printf("Digite a área da cidade (em km²):");
     scanf("%f", &areab);
 
-    printf("\nDigite o PIB da cidade (em milhões):\n");
+    printf("Digite o PIB da cidade (em milhões):");
     scanf("%f", &pibb);
 
-    printf("\nDigite o número de pontos turisticos:\n");
+    printf("Digite o número de pontos turisticos:");
     scanf("%d", &pturisticosb);
 
     
