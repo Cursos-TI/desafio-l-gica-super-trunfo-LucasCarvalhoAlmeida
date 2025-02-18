@@ -133,7 +133,7 @@ int main() {
 
    // Exibição do vencedor
 
-   printf("O jogador com a carta vencedora é:\n");
+   printf("\nO jogador com a carta vencedora é:\n");
 
    if(pontos_jogador1 > pontos_jogador2){
     printf("\nJogador 1 é o vencedor com %d pontos!\n", pontos_jogador1);
