@@ -16,10 +16,10 @@ int main() {
     printf("Jogador 1 insira os dados da sua carta\n");
 
     printf("Insira o nome do estado:");
-    scanf("%c", &estadoa);
+    scanf("%s", &estadoa);
 
     printf("Digite o nome da cidade:");
-    scanf("%c", &nomecidadea);
+    scanf("%s", &nomecidadea);
 
     printf("Digite a população da cidade:");
     scanf("%d", &populacaoa);
@@ -34,14 +34,14 @@ int main() {
     scanf("%d", &pturisticosa);
 
 
-    printf("\nMuito bom\n");
+    printf("\nMuito bom!\n");
     printf("Agora é a sua vez jogador 2:\n");
 
-    printf("Insira o nome do estado");
-    scanf("%c", &estadob);
+    printf("Insira o nome do estado:");
+    scanf("%s", &estadob);
 
     printf("Digite o nome da cidade:");
-    scanf("%c", &nomecidadeb);
+    scanf("%s", &nomecidadeb);
 
     printf("Digite a população da cidade:");
     scanf("%d", &populacaob);
