@@ -2,6 +2,7 @@
 
 
 int main() {
+
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
 
@@ -11,6 +12,7 @@ int main() {
     float areaa, areab;
     float piba, pibb;
     int pturisticosa, pturisticosb;
+    int pontos_jogador1 =0 , pontos_jogador2 =0;
 
        // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -79,28 +81,41 @@ int main() {
     //     printf("Cidade 2 tem maior população.\n");
     // }
 
+    // Comparação de população
+
     if(populacaoa > populacaob) {
         printf("\nPopulação da cidade do jogador 1 é maior.\n");
+        pontos_jogador1++;
     } else{
         printf("\nPopulação da cidade do jogador 2 é maior.\n");
+        pontos_jogador2++;
     }
 
+    // Comparação de área
     if(areaa > areab) {
         printf("\nÁrea da cidade do jogador 1 é maior.\n");
+        pontos_jogador1++;
     } else{
         printf("\nÁrea da cidade do jogador 2 é maior.\n");
+        pontos_jogador2++;
     }
 
+    // Comparação de pib
     if(piba > pibb) {
         printf("\nPib da cidade do jogador 1 é maior.\n");
+        pontos_jogador1++;
     } else{
         printf("\nPib da cidade do jogador 2 é maior.\n");
+        pontos_jogador2++;
     }
 
+    // Comparação de pontos turiscos
     if(pturisticosa > pturisticosb) {
         printf("\nPontos Turisticos da cidade do jogador 1 é maior.\n");
+        pontos_jogador1++;
     } else{
         printf("\nPontos Turisticos da cidade do jogador 2 é maior.\n");
+        pontos_jogador2++;
     }
 
 
@@ -108,8 +123,20 @@ int main() {
     // Após realizar as comparações, exiba os resultados para o usuário.
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+   // Exibição do vencedor
+
+   printf("O jogador com a carta vencedora é:");
+
+   if(pontos_jogador1 > pontos_jogador2){
+    printf("Jogador 1 é o vencedor com %d pontos!\n", pontos_jogador1);
+   } else if(pontos_jogador1 < pontos_jogador2){
+    printf("Jogador 2 é o vencedor com %d pontos!\n", pontos_jogador2);
+   } else{
+    printf("\n O jogo terminou empatado!");
+   }
+
+
+
 
     return 0;
 }
