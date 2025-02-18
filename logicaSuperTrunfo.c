@@ -48,6 +48,7 @@ int main() {
     printf("Agora é a sua vez jogador 2:\n");
 
     printf("Insira o nome do estado:");
+    getchar();
     scanf("%[^\n]", &estadob);
 
     printf("Digite o nome da cidade:");
