@@ -9,7 +9,7 @@ int main(){
    printf("1. Consultar saldo.\n");
    printf("2. Realizar depósito.\n");
    printf("3. Realizar saque.\n");
-   scanf("%d", opcao);
+   scanf("%d", &opcao);
 
    switch (opcao)
    {
@@ -17,15 +17,15 @@ int main(){
     printf("Seu saldo atual: R$ %f\n", saldo);
     break;
    case 2:
-    printf("Digite o banco que deseja depositar\n");
-    printf("Digite a agência que deseja depositar\n");
-    printf("Digite a conta que deseja depositar\n");
+    printf("Digite o banco que deseja depositar.\n");
+    printf("Digite a agência que deseja depositar.\n");
+    printf("Digite a conta que deseja depositar.\n");
     break; 
    case 3:
-    printf("Digite o valor a sacar\n");
+    printf("Digite o valor a sacar.\n");
     break;
    default:
-    printf("Opçõa Inválida.\n");
+    printf("Opção Inválida.\n");
     break;
    }
 
